@@ -83,6 +83,25 @@ const campaignData = {
             alignment: "Neutral",
             description: "After being released from the now-abandoned temple of Oth’kahar, the eye seeks its new purpose and follows the players in their journey, aiding them by revealing imagery."
         }
+    },
+    factions: {
+        vanguard: {
+            name: "Vanguard of the Sun",
+            description: "Once a respected adventuring guild, their hubris led them to their downfall when they were overrun by the plague. Their dormant magical orb, an artifact of significant power, remains in their abandoned outpost, offering a glimmer of hope."
+        }
+    },
+
+    cities: {
+        summerhall: {
+            name: "Summerhall",
+            description: "The bustling city from which the Vanguard of the Sun originated and where Lady Adelaide and the Lord reside. Despite its peaceful facade, it harbors its own share of secrets and power struggles."
+        }
+    },
+    settlements: {
+        newmill: {
+            name: "New Mill",
+            description: "A quaint village plagued by the mysterious illness. The villagers live in fear and uncertainty as their friends and family fall ill one by one. The players are the villagers' last hope. The last refuge for many, it stands as a beacon of hope against the plague due to the village healer's efforts. Guarded vigilantly, newcomers are checked for signs of the plague before they're allowed entry."
+        }
     }
     // ... other categories like factions, locations, etc.
 };

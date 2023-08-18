@@ -132,6 +132,8 @@ footer {
     display: flex;
     justify-content: space-between;
     margin-bottom: 20px;
+
+    flex-wrap: wrap;
 }    
 .character-detail {
     flex: 0 0 calc(50% - 10px);  /* Half width minus a bit of padding */
