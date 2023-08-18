@@ -73,25 +73,6 @@ footer {
     color: #666;
 }
 
-/* Breadcrumbs styles */
-.breadcrumbs {
-    margin: 15px 0;
-    padding: 10px;
-    background-color: #ecf0f1;
-    border-radius: 5px;
-}
-.breadcrumbs a {
-    color: #7f8c8d;
-    margin-right: 5px;
-}
-.breadcrumbs a:last-child {
-    color: #2c3e50; /* Active breadcrumb */
-}
-.breadcrumbs a:not(:last-child)::after {
-    content: '>';
-    margin-left: 5px;
-}
-
 /* Mobile styles */
 @media screen and (max-width: 600px) {
     section {

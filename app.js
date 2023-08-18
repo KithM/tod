@@ -17,6 +17,42 @@ document.addEventListener("DOMContentLoaded", function() {
         description.textContent = entryData.description;
         detailsSection.appendChild(description);
 
+        // Only add additional details if the category is characters
+        if (category === "characters") {
+            // Age
+            if (entryData.age) {
+                const age = document.createElement("p");
+                age.textContent = "Age: " + entryData.age;
+                detailsSection.appendChild(age);
+            }
+            // Race
+            if (entryData.race) {
+                const race = document.createElement("p");
+                race.textContent = "Race: " + entryData.race;
+                detailsSection.appendChild(race);
+            }
+            // Gender
+            if (entryData.gender) {
+                const gender = document.createElement("p");
+                gender.textContent = "Gender: " + entryData.gender;
+                detailsSection.appendChild(gender);
+            }
+            // Personality Traits
+            if (entryData.personalityTraits && entryData.personalityTraits.length > 0) {
+                const personalityTitle = document.createElement("h3");
+                personalityTitle.textContent = "Personality Traits";
+                detailsSection.appendChild(personalityTitle);
+
+                const ul = document.createElement("ul");
+                entryData.personalityTraits.forEach(trait => {
+                    const li = document.createElement("li");
+                    li.textContent = trait;
+                    ul.appendChild(li);
+                });
+                detailsSection.appendChild(ul);
+            }
+        }
+
         // ... any other details you might want to add.
     } else {
         console.error("Invalid entry or category specified");
