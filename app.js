@@ -51,6 +51,12 @@ document.addEventListener("DOMContentLoaded", function() {
                 });
                 detailsSection.appendChild(ul);
             }
+            // Alignment
+            if (entryData.alignment) {
+                const alignment = document.createElement("p");
+                alignment.textContent = "Alignment: " + entryData.alignment;
+                detailsSection.appendChild(alignment);
+            }
         }
 
         // ... any other details you might want to add.
