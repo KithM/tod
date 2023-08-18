@@ -82,6 +82,7 @@ footer {
     nav ul {
         text-align: left;
         padding-left: 10px;
+        flex-direction: column;
     }
     nav li {
         display: block;
