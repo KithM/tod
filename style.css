@@ -91,3 +91,31 @@ footer {
     content: '>';
     margin-left: 5px;
 }
+
+/* Mobile styles */
+@media screen and (max-width: 600px) {
+    section {
+        margin: 20px 10px;
+    }
+
+    nav ul {
+        text-align: left;
+        padding-left: 10px;
+    }
+    nav li {
+        display: block;
+        margin-right: 0;
+        margin-bottom: 5px;
+    }
+    nav li:last-child {
+        margin-bottom: 0;
+    }
+
+    body {
+        font-size: 18px;
+    }
+
+    h2 {
+        font-size: 24px;
+    }
+}
